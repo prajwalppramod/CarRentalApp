@@ -162,7 +162,7 @@ const cars = [
                                 <DirectionsCarIcon className="mr-1 text-blue-600" /> ₹{car.price_per_day} / Day
                             </Typography>
                             <div className="mt-auto pt-4">
-                                <Button variant="contained" color="primary" fullWidth>Rent Now</Button>
+                                <button className='"inline-flex h-10 w-full text-white items-center bg-[#08426a] border-0 py-1 px-3 focus:outline-none hover:bg-[#08426a] rounded text-base mt-4 md:mt-0'>Rent Now</button>
                             </div>
                         </CardContent>
                     </Card>
