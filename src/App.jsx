@@ -11,6 +11,8 @@ import ViewAllBookings from './components/ViewAllBookings'
 import LogoutPage from './components/LogoutPage'
 import CancelBooking from './components/CancelBooking'
 import AddCar2 from './components/AddCar2'
+import CreateBooking from './components/CreateBooking'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -29,7 +31,9 @@ function App() {
             <Route path='/logout' element={<LogoutPage/>} />
             <Route path='/cancelbooking' element={<CancelBooking/>} />
             <Route path='/addcar' element={<AddCar2/>} />
+            <Route path='/createbooking' element={<CreateBooking/>} />
         </Routes>
+        <Footer/>
       </div>
 
     </>

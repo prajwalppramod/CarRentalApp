@@ -11,12 +11,12 @@ const ViewAllBookings = () => {
     // Fetch bookings and users from the backend
     const fetchData = async () => {
       try {
-        // Fetch bookings
-        const bookingsResponse = await axios.get('/api/bookings');
+        // Fetch bookings from the backend
+        const bookingsResponse = await axios.get('http://localhost:8080/api/viewAllBookings');
         setBookings(bookingsResponse.data);
 
-        // Fetch users
-        const usersResponse = await axios.get('/api/users');
+        // Fetch users from the backend
+        const usersResponse = await axios.get('http://localhost:8080/api/users');
         setUsers(usersResponse.data);
 
         setLoading(false);

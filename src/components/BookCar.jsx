@@ -3,6 +3,7 @@ import { Card, CardMedia, CardContent, Typography, Button } from '@mui/material'
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal';
+import { Link } from 'react-router-dom';
 
 const cars = [
     {
@@ -162,7 +163,7 @@ const cars = [
                                 <DirectionsCarIcon className="mr-1 text-blue-600" /> ₹{car.price_per_day} / Day
                             </Typography>
                             <div className="mt-auto pt-4">
-                                <button className='"inline-flex h-10 w-full text-white items-center bg-[#08426a] border-0 py-1 px-3 focus:outline-none hover:bg-[#08426a] rounded text-base mt-4 md:mt-0'>Rent Now</button>
+                                <Link to={"/login"}><button className='"inline-flex h-10 w-full text-white items-center bg-[#08426a] border-0 py-1 px-3 focus:outline-none hover:bg-[#08426a] rounded text-base mt-4 md:mt-0'>Rent Now</button></Link>
                             </div>
                         </CardContent>
                     </Card>
